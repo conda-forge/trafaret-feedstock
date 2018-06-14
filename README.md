@@ -22,10 +22,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-trafaret-green.svg)](https://anaconda.org/conda-forge/trafaret)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/trafaret.svg)](https://anaconda.org/conda-forge/trafaret)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/trafaret.svg)](https://anaconda.org/conda-forge/trafaret)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/trafaret.svg)](https://anaconda.org/conda-forge/trafaret)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-trafaret-green.svg)](https://anaconda.org/conda-forge/trafaret) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/trafaret.svg)](https://anaconda.org/conda-forge/trafaret) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/trafaret.svg)](https://anaconda.org/conda-forge/trafaret) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/trafaret.svg)](https://anaconda.org/conda-forge/trafaret) |
 
 Installing trafaret
 ===================
