@@ -1,6 +1,6 @@
 {% set name = "trafaret" %}
-{% set version = "1.1.2" %}
-{% set sha256 = "766593f9a1c327f8e1398267c95c89fa44058280eaef836156a854c4cc1d6a39" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "3045f5b4f9634928e7dd66db0ce9fcfef5a075935bb54c6a1f476b62c62abdb4" %}
 
 package:
   name: {{ name|lower }}
