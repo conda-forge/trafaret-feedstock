@@ -26,7 +26,6 @@ requirements:
 test:
   imports:
     - trafaret
-    - trafaret.extras
     - trafaret.utils
     - trafaret.visitor
     - trafaret.constructor
