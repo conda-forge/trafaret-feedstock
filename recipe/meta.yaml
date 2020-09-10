@@ -1,6 +1,6 @@
 {% set name = "trafaret" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "3045f5b4f9634928e7dd66db0ce9fcfef5a075935bb54c6a1f476b62c62abdb4" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "72c342ede27fb34cd219b62855119380ae1c87006b6106be163c01159eb955ff" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -36,7 +36,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Ultimate transformation library that supports validation, contexts and aiohttp'
+  summary: Ultimate transformation library that supports validation, contexts and aiohttp
 
   description: |
     Trafaret is rigid and powerful lib to work with foreign data, configs etc.
