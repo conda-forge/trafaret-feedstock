@@ -24,11 +24,16 @@ requirements:
     - python >=3.6
 
 test:
+  requires:
+    - pymongo >=2.4.1
+    - python-dateutil >=1.5
   imports:
     - trafaret
-    - trafaret.utils
-    - trafaret.visitor
     - trafaret.constructor
+    - trafaret.keys
+    - trafaret.utils
+    - trafaret.contrib.object_id
+    - trafaret.contrib.rfc_3339
 
 about:
   home: https://github.com/Deepwalker/trafaret
