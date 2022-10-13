@@ -1,6 +1,6 @@
 {% set name = "trafaret" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "3045f5b4f9634928e7dd66db0ce9fcfef5a075935bb54c6a1f476b62c62abdb4" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "d9d00800318fbd343fdfb3353e947b2ebb5557159c844696c5ac24846f76d41c" %}
 
 package:
   name: {{ name|lower }}
@@ -14,29 +14,33 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
 
 test:
+  requires:
+    - pymongo >=2.4.1
+    - python-dateutil >=1.5
   imports:
     - trafaret
-    - trafaret.extras
-    - trafaret.utils
-    - trafaret.visitor
     - trafaret.constructor
+    - trafaret.keys
+    - trafaret.utils
+    - trafaret.contrib.object_id
+    - trafaret.contrib.rfc_3339
 
 about:
   home: https://github.com/Deepwalker/trafaret
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Ultimate transformation library that supports validation, contexts and aiohttp'
+  summary: Ultimate transformation library that supports validation, contexts and aiohttp
 
   description: |
     Trafaret is rigid and powerful lib to work with foreign data, configs etc.
